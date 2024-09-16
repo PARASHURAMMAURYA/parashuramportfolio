@@ -9,6 +9,7 @@ import Contact from './components/contact';
 import ResumePage from './components/Resume';
 import image2 from './assets/pexels-pixabay-531767.jpg' 
 import {useTheme } from './ThemeContext';
+import Project from './components/Project';
 function App() {
   const { isDarkMode} = useTheme();
 
@@ -23,7 +24,7 @@ function App() {
        <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/about' element={<About/>}></Route>
-          <Route path='/projects' element={<h1>Projects</h1>}></Route>
+          <Route path='/projects' element={<Project/>}></Route>
           <Route path='/resume' element={<ResumePage />}></Route>
           <Route path='/contact' element={<Contact/>}></Route>
        </Routes>

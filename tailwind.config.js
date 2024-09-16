@@ -13,7 +13,8 @@ module.exports = {
         "spin-fast": "spin 2s linear infinite",
         "fade-in": "fade-in 2s ease-out",
         "slide-left": "slide-left 2s ease-out",
-        "slide-right": "slide-right 2s ease-out",
+        "slide-up": "slide-up 2s ease-out",
+        "slide-right":"slide-right 2s ease-out",
         marquee: 'marquee 20s linear infinite',
 
         // Add more custom animations as needed
@@ -27,10 +28,15 @@ module.exports = {
           '0%': { transform: 'translateX(240px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
-        'slide-right': {
+        'slide-up': {
           '0%': { transform: 'translateY(140px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
+        'slide-right': {
+          '0%': { transform: 'translateX(-240px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        }
+
 
       },
     },

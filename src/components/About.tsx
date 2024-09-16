@@ -51,7 +51,7 @@ const About = () => {
 
 
       <h1 className=" text-3xl font-bold pt-20 mb-8 text-white">Tools I Use </h1>
-      <div className="animate-slide-left grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 ">
+      <div className="animate-slide-right grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 ">
         {Tools.map((tool, id) => (
           <div
             key={id}

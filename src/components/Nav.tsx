@@ -5,7 +5,7 @@ import { MdDownload } from 'react-icons/md';
 import ResumePDF from '../assets/cv.pdf';
 import DarkModeToggle from '../DarkModeToggle';
 
-const Component: React.FC = () => {
+const Nav: React.FC = () => {
   // State to manage the menu's visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -59,6 +59,17 @@ const Component: React.FC = () => {
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
               </NavLink>
             </li>
+            <li className="block text-white py-2 px-3 md:p-0 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <NavLink 
+                to="/projects" 
+                className={({ isActive }) => 
+                  `group text-white transition duration-300 no-underline hover:no-underline ${isActive ? 'text-gray-300' : ''}`
+                }
+              >
+                Projects
+                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
+              </NavLink>
+            </li>
             <li className="block text-white py-2 px-3 md:p-0 text-gray-900 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
               <a 
                 href={ResumePDF} 
@@ -93,4 +104,4 @@ const Component: React.FC = () => {
   );
 };
 
-export default Component;
+export default Nav;
