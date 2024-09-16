@@ -36,3 +36,13 @@
     transform: translateX(26px);
   }
   
+
+  .app {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    overflow:auto; /* Hide overflow to prevent scrollbars if the image is slightly larger */
+  }
+  
