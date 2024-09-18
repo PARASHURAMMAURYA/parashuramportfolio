@@ -6,21 +6,19 @@ import ResumePDF from '../assets/cv.pdf';
 import DarkModeToggle from '../DarkModeToggle';
 
 const Nav: React.FC = () => {
-  // State to manage the menu's visibility
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  // Function to toggle the menu
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
+                                                       
+   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+                                                        
   return (
-    <nav className="border-gray-200  dark:border-gray-700">
+    <nav className="border-gray-200  dark:border-gray-700 ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={munna} className="h-16 rounded-full" alt="Flowbite Logo" />
           <span className="self-center text-white text-2xl font-semibold whitespace-nowrap dark:text-white">Web Developer</span>
         </div>
         <button 
-          onClick={toggleMenu} // Toggle menu on click
+          onClick={toggleMenu} 
           type="button" 
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" 
           aria-controls="navbar-solid-bg" 
