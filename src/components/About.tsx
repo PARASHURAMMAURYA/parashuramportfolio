@@ -44,7 +44,7 @@ const About = () => {
             key={id}
             className="flex flex-col items-center p-4   shadow-md   rounded-full"
           >
-            <img src={skill.logo} className="w-16 h-16 mb-2" />
+            <img alt="logos" src={skill.logo} className="w-16 h-16 mb-2" />
           </div>
         ))}
       </div>
@@ -57,7 +57,7 @@ const About = () => {
             key={id}
             className="flex flex-col items-center p-4   shadow-md   rounded-full"
           >
-            <img src={tool.logo} className="w-16 h-16 mb-2" />
+            <img alt="logos" src={tool.logo} className="w-16 h-16 mb-2" />
           </div>
         ))}
       </div>
