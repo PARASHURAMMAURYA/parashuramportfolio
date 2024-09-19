@@ -21,7 +21,7 @@ function Home() {
         <img
           alt="moon"
           src={isDarkMode ? moon : sun2}
-          className="sm:w-36 md:w-44 lg:w-64 min-[320px]:w-36 absolute sm:top-12 right-7 animate-spin-slow sm:right-18"
+          className={` ${!isDarkMode?'sm:w-36 md:w-44 lg:w-64 min-[320px]:w-36':'sm:w-24 md:w-36 lg:w-48 min-[320px]:w-24'} absolute sm:top-12 right-4 animate-spin-slow sm:right-18`}
         />
       </div>
       <img
