@@ -1,5 +1,4 @@
-import React from 'react';
-import './profile.css'
+ import './profile.css'
 import munna from '../assets/FB_IMG_1726115600076.jpg'
 const ProfileCard = () => {
   return (

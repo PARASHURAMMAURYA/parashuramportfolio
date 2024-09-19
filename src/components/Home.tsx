@@ -1,6 +1,5 @@
-import React from "react";
+
 import moon from "../assets/moon_PNG12.png";
-import image from "../assets/logo-780c3a48.png";
 import laptop from "../assets/lacalle.46e4f32c9b4d72a6fb3a.png";
 import { useTheme } from "../ThemeContext";
 import sun2 from "../assets/sun3.png";

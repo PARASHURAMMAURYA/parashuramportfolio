@@ -1,5 +1,4 @@
-// src/About.js
-import React from "react";
+
 import reactLogo from "../assets/htmllogo.png";
 import htmlLogo from "../assets/csslogo.png";
 import cssLogo from "../assets/jslogo.png";
