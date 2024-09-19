@@ -6,17 +6,18 @@ import Home from "./components/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "./components/Nav";
 import Contact from "./components/contact";
-import ResumePage from "./components/Resume";
+ 
 import image2 from "./assets/pexels-pixabay-531767.jpg";
 import { useTheme } from "./ThemeContext";
 import Project from "./components/Project";
+import Resume from "./components/Resume";
 
 function App() {
   const { isDarkMode } = useTheme();
 
   return (
     <div
-      className="app "
+      className="app"
       style={{ backgroundImage: `url(${!isDarkMode ? image2 : image})` }}
     >
       <BrowserRouter>
@@ -25,7 +26,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/projects" element={<Project />}></Route>
-          <Route path="/resume" element={<ResumePage />}></Route>
+          <Route path="/resume" element={<Resume/>}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </BrowserRouter>
